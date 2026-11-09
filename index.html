@@ -1,0 +1,888 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mariem | Data Engineer Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- NAVIGATION -->
+        <nav>
+            <div class="nav-container">
+
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                    <span>Portfolio.</span>
+                </div>
+
+                <div class="links">
+
+                    <div class="link" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#home"></a>
+                    </div>
+
+                    <div class="link" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#about">À propos</a>
+                    </div>
+
+                    <div class="link" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#studies">Formation</a>
+                    </div>
+                    
+                    <div class="link" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#experiences">Expériences</a>
+                    </div>
+                    <div class="link" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#skills">Compétences</a>
+                    </div>
+
+                    <div class="link" data-aos="fade-up" data-aos-delay="500">
+                        <a href="#projects">Projets</a>
+                    </div>
+
+                    <div class="link contact-btn" data-aos="fade-up" data-aos-delay="600">
+                        <a href="#contact">Contacter Moi</a>
+                    </div>
+
+                </div>
+
+                <!-- Hamburger Icon -->
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+
+            </div>
+
+            <!-- MOBILE DROPDOWN -->
+            <div class="dropdown">
+
+                <div class="links">
+
+                    <a href="#home" onclick="cancel()">Home</a>
+                    <a href="#about" onclick="cancel()">À propos</a>
+                    <a href="#studies" onclick="cancel()">Formation</a>
+                    <a href="experiences" onclick="cancel()">Expériences</a>
+                    <a href="#skills" onclick="cancel()">Compétences</a>
+                    <a href="#projects" onclick="cancel()">Projets</a>
+                    <a href="#contact" onclick="cancel()">Contacter Moi</a>
+
+                    <!-- Close Icon -->
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+
+
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2000">
+                <img src="image.png" alt="Mariem portrait">
+            </div>
+            <div class="content">
+
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                    Salut, je suis <span class="my-name">Mariem</span>
+                </h1>
+
+                <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">Je suis <span class="text"></span>
+                </h3>
+
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                Je suis ingénieure en données, passionnée par la conception de solutions modernes, 
+                le développement d’architectures évolutives et la transformation des données brutes en informations pertinentes à forte valeur ajoutée.
+                </p>
+
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/BenJdidiaMariem" target="_blank" rel="noopener norederrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mariem-ben-jdidia-ab40142b4/" target="_blank" rel="noopener norederrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <a href="CV-BenJdidiaMariem.pdf" download="Mariem_Ben_Jdidia_CV.pdf">Télécharger CV</a>
+                </div>
+
+            </div>
+        </div>
+            <!-- Technology Stack -->
+            <div class="tech-marquee">
+                <div class="tech-track">
+                    <!-- Premier groupe -->
+                    <div class="tech-item">
+                        <img src="https://cdn.simpleicons.org/apachespark" alt="Apache Spark">
+                        <span>Apache Spark</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="https://cdn.simpleicons.org/python" alt="Python">
+                        <span>Python</span>
+                    </div>
+
+
+
+                    <div class="tech-item">
+                        <i class="fa-brands fa-windows"></i>
+                        <span>Microsoft Visual Studio</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL">
+                        <span>PostgreSQL</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="https://cdn.simpleicons.org/docker" alt="Docker">
+                        <span>Docker</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="https://cdn.simpleicons.org/apacheairflow" alt="Apache Airflow">
+                        <span>Airflow</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="https://cdn.simpleicons.org/pandas" alt="Pandas">
+                        <span>Pandas</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="https://cdn.simpleicons.org/streamlit" alt="Streamlit">
+                        <span>Streamlit</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.simpleicons.org/jenkins" alt="jenkins">
+                        <span>Jenkins</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.simpleicons.org/mlflow" alt="Mlflow">
+                        <span>MlFlow</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.simpleicons.org/airbyte" alt="Airbyte">
+                        <span>Airbyte</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fa-brands fa-java"></i>
+                        <span>Java</span>
+                    </div>
+
+                    <!-- Deuxième groupe pour une animation continue -->
+                    <div class="tech-item" aria-hidden="true">
+                        <img src="https://cdn.simpleicons.org/apachespark" alt="">
+                        <span>Apache Spark</span>
+                    </div>
+                    <div class="tech-item" aria-hidden="true">
+                        <img src="https://cdn.simpleicons.org/python" alt="">
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-item" aria-hidden="true">
+                        <img src="https://cdn.simpleicons.org/postgresql" alt="">
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="tech-item" aria-hidden="true">
+                        <img src="https://cdn.simpleicons.org/docker" alt="">
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-item" aria-hidden="true">
+                        <img src="https://cdn.simpleicons.org/apacheairflow" alt="">
+                        <span>Airflow</span>
+                    </div>
+                    <div class="tech-item" aria-hidden="true">
+                        <img src="https://cdn.simpleicons.org/pandas" alt="">
+                        <span>Pandas</span>
+                    </div>
+                    <div class="tech-item" aria-hidden="true">
+                        <img src="https://cdn.simpleicons.org/streamlit" alt="">
+                        <span>Streamlit</span>
+                    </div>
+
+                </div>
+            </div>
+        
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="image.png" alt="About Mariem">
+        </div>
+        <div class="about-container">
+            <div class="about-text">
+                <h2>À propos de <span>moi</span></h2>
+                <h4>Ingénieure des données et systèmes décisionnels</h4>
+                <p>
+                    Ingénieure en données, avec une expérience en architecture des données,
+                    conception de pipelines ETL, mise en place de solutions Data Lakehouse
+                    et analyse des données, acquise à travers mon parcours académique,
+                    mes projets et mes expériences professionnelles.
+                </p>
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Sfax, Tunisie</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Formation Section -->
+    <section class="studies" id="studies">
+        <div class="study-container">
+
+            <div class="section-title">
+                <h1>Mon parcours <span>académique</span></h1>
+                <p>Un parcours construit autour des sciences, de l'ingénierie et de la data.</p>
+            </div>
+
+            <div class="study-list">
+
+                <!-- Engineering Degree -->
+                <article class="study-item">
+                    <div class="sutdy-date">2023 — 2026</div>
+
+                    <div class="study-card">
+                        <span class="study-level">Diplôme d'ingénieur</span>
+
+                        <h2>Ingénierie des Données et Systèmes Décisionnels</h2>
+
+                        <p class="study-school">
+                            École Nationale d'Électronique et des Télécommunications de Sfax
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Preparatory Cycle -->
+                <article class="study-item">
+                    <div class="study-date">2021 — 2023</div>
+
+                    <div class="study-card">
+                        <span class="study-level">Cycle préparatoire</span>
+
+                        <h2>Physique-Chimie</h2>
+
+                        <p class="study-school">
+                            Institut Préparatoire aux Études d'Ingénieurs de Sfax
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+</section>
+
+
+    <section id="experiences">
+        <div class="experiences" id="experiences">
+
+            <div class="experiences-container">
+
+                <h1 class="section-title">
+                    Expériences <span>Professionnelles</span>
+                </h1>
+
+
+                <div class="experiences-list">
+
+                    <article class="experience-card">
+                        <div class="experience-header">
+                            <h2><i class="fa-solid fa-database"></i>  Stage de Projet de Fin d'Études</h2>                        
+                            <span class="experience-date">Février – Juillet 2026</span>
+                        </div>
+                        <h3>Detandt-Simon International · Sousse</h3>
+                        <p>Mise en place d'un pipeline ETL/ELT moderne pour l'intégration
+                            et l'analyse décisionnelle des données issues de Microsoft Dynamics AX 2012.</p>
+                        <button class="read" data-modal="modal-pfe">Voir plus</button>
+                    </article>
+
+                    <article class="experience-card">
+                        <div class="experience-header">
+                            <h2><i class="fa-solid fa-calendar-check"></i>  Stage de Perfectionnement</h2>
+                            <span class="experience-date">Juillet – Août 2025</span>
+                        </div>
+                        <h3>PerfectSoft · Sfax</h3>
+                        <p>Développement d'une application web de prise de rendez-vous en ligne.</p>
+                        <button class="read" data-modal="modal-perfectsoft">Voir plus</button>
+                    </article>
+
+                    <article class="experience-card">
+                        <div class="experience-header">
+                            <h2><i class="fa-solid fa-code"></i>  Stage d'Initiation</h2>
+                            <span class="experience-date">Juin – Juillet 2024</span>
+                        </div>
+                        <h3>Centre de Recherche en Numérique · Sfax</h3>
+                        <p>Développement d'une application REST pour la gestion des parcours de soins.</p>
+                        <button class="read" data-modal="modal-crns">Voir plus</button>
+                    </article>
+
+                </div>
+
+                <!-- MODAL PFE -->
+                <div class="modal-overlay" id="modal-pfe">
+                    <div class="modal-content">
+                        <button class="modal-close" aria-label="Fermer">&times;</button>
+
+                        <span class="modal-category">Stage de Projet de Fin d'Études · 2026</span>
+                        <h2>Modern Data Lakehouse – Dynamics AX 2012</h2>
+                        <h3>Detandt-Simon International · Sousse</h3>
+
+                        <p>
+                            Mise en place d'un pipeline ETL/ELT moderne pour l'intégration
+                            et l'analyse décisionnelle des données issues de Microsoft Dynamics AX 2012.
+                            L'objectif était de remplacer un processus de reporting manuel et répétitif
+                            par une architecture de données automatisée et évolutive.
+                        </p>
+
+                        <h3>Missions et réalisations</h3>
+                        <ul>
+                            <li>Étude de l'existant et analyse des données de l'ERP Microsoft Dynamics AX 2012.</li>
+                            <li>Mise en place de la réplication transactionnelle SQL Server pour extraire les données ERP.</li>
+                            <li>Développement de flux d'intégration avec SSIS pour les fichiers Excel.</li>
+                            <li>Conception d'une architecture Data Lakehouse basée sur l'architecture Médaillon.</li>
+                            <li>Développement de pipelines de traitement et de transformation avec Apache Spark.</li>
+                            <li>Orchestration des traitements avec Apache Airflow et conteneurisation avec Docker.</li>
+                            <li>Création de tableaux de bord analytiques avec Streamlit.</li>
+                            <li>Développement de modèles prédictifs pour anticiper les causes de rupture de stock et recommander des fournisseurs.</li>
+                        </ul>
+
+                        <h3>Résultats</h3>
+                        <ul>
+                            <li>Automatisation du processus d'intégration et de traitement des données.</li>
+                            <li>Réduction du temps de traitement, passant d'un délai pouvant atteindre deux jours à environ 17 minutes.</li>
+                            <li>Mise à disposition d'indicateurs analytiques et prédictifs pour faciliter la prise de décision.</li>
+                        </ul>
+
+                        <h3>Environnement technique</h3>
+                        <div class="modal-tags">
+                            <span>Python</span><span>SQL Server</span><span>SSIS</span>
+                            <span>Apache Spark</span><span>PySpark</span><span>Airflow</span>
+                            <span>PostgreSQL</span><span>Delta Lake</span><span>Docker</span>
+                            <span>Streamlit</span><span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODAL PERFECTSOFT -->
+                <div class="modal-overlay" id="modal-perfectsoft">
+                    <div class="modal-content">
+                        <button class="modal-close" aria-label="Fermer">&times;</button>
+
+                        <span class="modal-category">Stage de Perfectionnement · 2025</span>
+                        <h2>Application Web de Prise de Rendez-vous</h2>
+                        <h3>PerfectSoft · Sfax</h3>
+
+                        <p>
+                            Conception et développement d'une application web permettant
+                            de gérer les rendez-vous en ligne et de faciliter la coordination
+                            entre les clients, les employés et les administrateurs.
+                        </p>
+
+                        <h3>Missions et réalisations</h3>
+                        <ul>
+                            <li>Analyse des besoins fonctionnels et identification des différents profils utilisateurs.</li>
+                            <li>Modélisation UML de l'application et de ses fonctionnalités.</li>
+                            <li>Développement des interfaces web adaptées aux différents utilisateurs.</li>
+                            <li>Implémentation des fonctionnalités de gestion et de suivi des rendez-vous.</li>
+                            <li>Intégration d'un calendrier interactif pour visualiser et organiser les réservations.</li>
+                            <li>Connexion de l'application à une base de données MongoDB.</li>
+                        </ul>
+
+                        <h3>Environnement technique</h3>
+                        <div class="modal-tags">
+                            <span>React.js</span><span>Meteor</span>
+                            <span>MongoDB</span><span>FullCalendar</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODAL CRNS -->
+                <div class="modal-overlay" id="modal-crns">
+                    <div class="modal-content">
+                        <button class="modal-close" aria-label="Fermer">&times;</button>
+
+                        <span class="modal-category">Stage d'Initiation · 2024</span>
+                        <h2>Application de Gestion des Parcours de Soins</h2>
+                        <h3>Centre de Recherche en Numérique de Sfax</h3>
+
+                        <p>
+                            Participation au développement d'une application destinée à
+                            gérer les parcours de soins des patients, en s'appuyant sur
+                            des services web et la modélisation des processus métier.
+                        </p>
+
+                        <h3>Missions et réalisations</h3>
+                        <ul>
+                            <li>Étude et compréhension des processus métier liés au parcours de soins.</li>
+                            <li>Modélisation des processus avec BPMN.</li>
+                            <li>Intégration et gestion des processus avec jBPM.</li>
+                            <li>Développement de services web REST avec Java.</li>
+                            <li>Participation à la structuration des échanges entre les composants de l'application.</li>
+                        </ul>
+
+                        <h3>Environnement technique</h3>
+                        <div class="modal-tags">
+                            <span>Java</span><span>jBPM</span>
+                            <span>BPMN</span><span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skills" id="skills">
+            <div class="skills-container">
+
+                <h1 class="section-title">
+                    Mes <span>compétences</span>
+                </h1>
+
+                <div class="skills-list">
+
+                    <!-- Big Data -->
+                    <div class="skill-card big-data">
+
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <h2>Big Data</h2>
+                        </div>
+
+                        <div class="skill-tags">
+                            <span>Apache Spark</span>
+                            <span>PySpark</span>
+                            <span>SQL</span>
+                            <span>NoSQL</span>
+                            <span>Hive</span>
+                            <span>HDFS</span>
+                            <span>Spark Streaming</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Data Engineering -->
+                    <div class="skill-card data-engineering">
+
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+                            <h2>Data Engineering</h2>
+                        </div>
+
+                        <div class="skill-tags">
+                            <span>ETL / ELT</span>
+                            <span>Apache Airflow</span>
+                            <span>SSIS</span>
+                            <span>Data Lakehouse</span>
+                            <span>Delta Lake</span>
+                            <span>Architecture Médaillon</span>
+                        </div>
+
+                    </div>
+                    <!--devops-->
+                    <div class="skill-card devops">
+
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+                            <h2>MlOps & DevOps</h2>
+                        </div>
+
+                        <div class="skill-tags">
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>Jenkins</span>
+                            <span>Mlflow</span>
+                            <span>DagsHub</span>
+                        </div>
+
+                    </div>
+
+                    <!-- base de données -->
+                    <div class="skill-card database">
+
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <h2>Bases de Données</h2>
+                        </div>
+
+                        <div class="skill-tags">
+                            <span>PostgreSQL</span>
+                            <span>SQLServer</span>
+                            <span>MongoDB</span>
+                            <span>XAMPP</span>
+                            <span>MySQL</span>
+                        </div>
+
+                    </div>
+                    <!-- dev -->
+                    <div class="skill-card language">
+
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h2>Languages</h2>
+                        </div>
+
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>Scala</span>
+                            <span>Java</span>
+                        </div>
+                        
+                    </div>
+                    <!-- ERP -->
+                    <div class="skill-card erp">
+
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-box-archive"></i>
+                            </div>
+                            <h2>ERP</h2>
+                        </div>
+
+                        <div class="skill-tags">
+                            <span>Microsoft Dynamics AX</span>
+
+                        </div>
+
+                    </div>
+                    <!-- dev -->
+                    <div class="skill-card dev">
+
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fa-brands fa-dev"></i>
+                            </div>
+                            <h2>Développement Web</h2>
+                        </div>
+
+                        <div class="skill-tags">
+                            <span>React.js</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Streamlit</span>
+                            <span>JavaScript</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="projects" id="projects">
+
+            <div class="projects-container">
+
+                <h1 class="section-title">
+                    Mes <span>projets académiques</span>
+                </h1>
+
+
+                <div class="projects-list">
+
+                    <article class="project-card">
+                        <h2><i class="fa-solid fa-chart-line"></i>  Real-Time Financial Data Pipeline</h2>
+                        <p>Pipeline de traitement de données financières en temps réel à partir de Binance.</p>
+                        <button class="read" data-modal="modal-financial">Voir plus</button>
+                    </article>
+
+                    <article class="project-card">
+                        <h2><i class="fa-solid fa-warehouse"></i>  Multi-Source Data Warehouse</h2>
+                        <p>Conception d'un entrepôt de données à partir de plusieurs sources hétérogènes.</p>
+                        <button class="read" data-modal="modal-warehouse">Voir plus</button>
+                    </article>
+
+                    <article class="project-card">
+                        <h2><i class="fa-solid fa-cloud"></i>  Data Integration with Microsoft Fabric</h2>
+                        <p>Intégration et modélisation de données dans un environnement Microsoft Fabric.</p>
+                        <button class="read" data-modal="modal-fabric">Voir plus</button>
+                    </article>
+
+                    <article class="project-card">
+                        <h2><i class="fa-solid fa-brain"></i>  Customer Purchase Behavior Analysis</h2>
+                        <p>Analyse du comportement d'achat et développement de modèles prédictifs.</p>
+                        <button class="read" data-modal="modal-customer">Voir plus</button>
+                    </article>
+
+                    <article class="project-card">
+                        <h2><i class="fa-solid fa-arrows-rotate"></i>  Web Data Integration with Talend</h2>
+                        <p>Extraction et intégration de données issues du Web dans une base de données.</p>
+                        <button class="read" data-modal="modal-talend">Voir plus</button>
+                    </article>
+
+                </div>
+
+                <!-- MODAL FINANCIAL PIPELINE -->
+                <div class="modal-overlay" id="modal-financial">
+                    <div class="modal-content">
+                        <button class="modal-close" aria-label="Fermer">&times;</button>
+                        <span class="modal-category">Projet personnel</span>
+                        <h2>Real-Time Financial Data Pipeline</h2>
+
+                        <p>
+                            Conception d'un pipeline de données financières en temps réel
+                            permettant de collecter, transmettre, traiter et stocker des
+                            données de marché provenant de Binance.
+                        </p>
+
+                        <h3>Objectifs et fonctionnalités</h3>
+                        <ul>
+                            <li>Collecter les données financières à partir de Binance WebSocket.</li>
+                            <li>Assurer la transmission des flux de données avec Apache Kafka.</li>
+                            <li>Traiter les données en streaming avec Spark Streaming.</li>
+                            <li>Orchestrer les traitements avec Apache Airflow.</li>
+                            <li>Stocker les données structurées dans PostgreSQL.</li>
+                            <li>Conteneuriser les composants avec Docker.</li>
+                        </ul>
+
+                        <h3>Architecture technique</h3>
+                        <p>
+                            Binance WebSocket → Apache Kafka → Spark Streaming
+                            → PostgreSQL, avec orchestration par Airflow.
+                        </p>
+
+                        <h3>Technologies</h3>
+                        <div class="modal-tags">
+                            <span>Python</span><span>Apache Kafka</span>
+                            <span>Spark Streaming</span><span>Airflow</span>
+                            <span>PostgreSQL</span><span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODAL DATA WAREHOUSE -->
+                <div class="modal-overlay" id="modal-warehouse">
+                    <div class="modal-content">
+                        <button class="modal-close" aria-label="Fermer">&times;</button>
+                        <span class="modal-category">Projet personnel</span>
+                        <h2>Multi-Source Data Warehouse</h2>
+
+                        <p>
+                            Conception d'un entrepôt de données intégrant plusieurs sources
+                            hétérogènes afin de centraliser les informations et de faciliter
+                            leur exploitation à des fins décisionnelles.
+                        </p>
+
+                        <h3>Travaux réalisés</h3>
+                        <ul>
+                            <li>Extraction des données provenant de fichiers CSV et XML.</li>
+                            <li>Conception et développement des flux ETL avec SSIS.</li>
+                            <li>Nettoyage, transformation et chargement des données.</li>
+                            <li>Modélisation dimensionnelle et création d'un cube OLAP.</li>
+                            <li>Création de rapports pour l'analyse des données.</li>
+                        </ul>
+
+                        <h3>Technologies</h3>
+                        <div class="modal-tags">
+                            <span>SQL Server</span><span>SSIS</span>
+                            <span>SSAS</span><span>SSRS</span><span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODAL MICROSOFT FABRIC -->
+                <div class="modal-overlay" id="modal-fabric">
+                    <div class="modal-content">
+                        <button class="modal-close" aria-label="Fermer">&times;</button>
+                        <span class="modal-category">Projet académique</span>
+                        <h2>Data Integration with Microsoft Fabric</h2>
+
+                        <p>
+                            Mise en œuvre d'un processus d'intégration et de préparation
+                            des données dans l'environnement Microsoft Fabric, avec pour
+                            objectif de faciliter leur centralisation et leur analyse.
+                        </p>
+
+                        <h3>Travaux réalisés</h3>
+                        <ul>
+                            <li>Exploration et préparation des données sources.</li>
+                            <li>Création de pipelines de données.</li>
+                            <li>Intégration des données dans un environnement Lakehouse.</li>
+                            <li>Préparation des données pour leur exploitation analytique.</li>
+                            <li>Création de rapports interactifs avec Power BI.</li>
+                        </ul>
+
+                        <h3>Technologies</h3>
+                        <div class="modal-tags">
+                            <span>Microsoft Fabric</span><span>Lakehouse</span>
+                            <span>Dataflows Gen2</span><span>Power BI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODAL CUSTOMER BEHAVIOR -->
+                <div class="modal-overlay" id="modal-customer">
+                    <div class="modal-content">
+                        <button class="modal-close" aria-label="Fermer">&times;</button>
+                        <span class="modal-category">Projet de fin d'année</span>
+                        <h2>Customer Purchase Behavior Analysis</h2>
+
+                        <p>
+                            Analyse des comportements d'achat des clients à partir de
+                            données de consommation, en combinant des techniques de Big Data,
+                            de data mining et de machine learning.
+                        </p>
+
+                        <h3>Travaux réalisés</h3>
+                        <ul>
+                            <li>Analyse exploratoire des données d'achat.</li>
+                            <li>Développement d'un système de recommandation basé sur les règles d'association.</li>
+                            <li>Utilisation de l'algorithme FP-Growth pour identifier les associations entre produits.</li>
+                            <li>Étude et application de modèles prédictifs avec XGBoost et Random Forest.</li>
+                            <li>Mise en place d'une architecture Lambda pour le traitement des données.</li>
+                            <li>Visualisation des résultats à travers Power BI.</li>
+                        </ul>
+
+                        <h3>Technologies</h3>
+                        <div class="modal-tags">
+                            <span>Python</span><span>FP-Growth</span>
+                            <span>XGBoost</span><span>Random Forest</span>
+                            <span>Big Data</span><span>Power BI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODAL TALEND -->
+                <div class="modal-overlay" id="modal-talend">
+                    <div class="modal-content">
+                        <button class="modal-close" aria-label="Fermer">&times;</button>
+                        <span class="modal-category">Projet personnel</span>
+                        <h2>Web Data Integration with Talend</h2>
+
+                        <p>
+                            Développement d'un processus d'intégration de données provenant
+                            du Web, depuis leur extraction jusqu'à leur chargement dans
+                            une base de données.
+                        </p>
+
+                        <h3>Travaux réalisés</h3>
+                        <ul>
+                            <li>Collecte de données Web à l'aide de Facepager.</li>
+                            <li>Préparation et organisation des données extraites.</li>
+                            <li>Conception d'un processus ETL avec Talend Open Studio.</li>
+                            <li>Chargement des données dans une base de données cible.</li>
+                        </ul>
+
+                        <h3>Technologies</h3>
+                        <div class="modal-tags">
+                            <span>Talend Open Studio</span>
+                            <span>Facepager</span>
+                            <span>ETL</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+        <div class="contact-text">
+            <h2>Contacter <span>Moi</span></h2>
+
+            <p>
+                Vous souhaitez échanger avec moi à propos d'une opportunité,
+                d'un projet ou d'une collaboration ? N'hésitez pas à me contacter.
+            </p>
+
+            <div class="contact-list">
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:tonemail@gmail.com">benjdidiamariem6@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+216XXXXXXXX">+21692412190</a>
+                </li>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="https://formsubmit.co/benjdidiamariem6@gmail.com@gmail.com" method="POST">
+
+                <input type="text" name="name"
+                    placeholder="Entrer votre nom" required>
+
+                <input type="email" name="email"
+                    placeholder="Entrer votre e-mail" required>
+
+                <input type="text" name="subject"
+                    placeholder="Sujet">
+
+                <textarea name="message"
+                        placeholder="Écrivez votre message..."
+                        required></textarea>
+
+                <input type="hidden" name="_subject"
+                    value="Nouveau message depuis mon portfolio">
+
+                <input type="hidden" name="_captcha" value="true">
+
+                <input type="submit" value="Envoyer" class="send">
+
+            </form>
+        </div>
+
+    </section>
+    <script src="main.js"></script>
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 0,
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+
+    <!-- NAVIGATION SCRIPT -->
+    <script>
+
+        function hamburg() {
+            const navbar = document.querySelector('.dropdown');
+            navbar.style.transform = 'translateY(0)';
+        }
+
+        function cancel() {
+            const navbar = document.querySelector('.dropdown');
+            navbar.style.transform = 'translateY(-100%)';
+        }
+
+    </script>
+
+</body>
+</html>
