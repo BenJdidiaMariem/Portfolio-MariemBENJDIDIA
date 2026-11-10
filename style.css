@@ -73,6 +73,67 @@ nav{
 .logo span{
     color: white;
 }
+
+
+/* LANGUAGE SWITCHER */
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+.language-switch button {
+    background: transparent;
+    border: none;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    padding: 5px;
+}
+
+.language-switch button.active {
+    color: rgba(81, 0, 0, 0.9);
+    font-weight: 700;
+}
+
+.language-switch button:hover {
+    color: rgba(81, 0, 0, 0.9);
+}
+
+.language-switch span {
+    color: #aaa;
+}
+
+/* Mobile */
+
+.mobile-language {
+    justify-content: center;
+    margin: 15px auto;
+}
+
+.mobile-language button {
+    color: white;
+    font-size: 17px;
+}
+
+.mobile-language button.active,
+.mobile-language button:hover {
+    color: #c99a9a;
+}
+
+@media screen and (max-width: 900px) {
+    .language-switch:not(.mobile-language) {
+        display: none;
+    }
+}
+
 .home .main-container {
     width: 100%;
     min-height: 80vh;
@@ -278,11 +339,17 @@ section:not(:last-of-type) {
     border-bottom: 1px solid rgba(81, 0, 0, 0.18);
 }
 .my-name {
+    display: inline-block;
     font-family: 'Dancing Script', cursive;
     font-size: 60px;
-    font-weight: 600;
-    color: rgba(81, 0, 0, 0.862);
+    font-weight: 700;
+    color: #510000;
     letter-spacing: 1px;
+    white-space: nowrap;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    z-index: 10;
 }
 .main-container{
     width: 100%;
@@ -579,6 +646,9 @@ section:not(:last-of-type) {
 
 /* Responsive */
 @media (max-width: 600px) {
+    #home .content h1 .my-name {
+        font-size: 42px;
+    }
     .studies {
         padding: 55px 5%;
     }
@@ -720,6 +790,30 @@ section:not(:last-of-type) {
     margin: 0 auto;
 }
 
+
+#home .content h1 {
+    display: block;
+    color: black;
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.4;
+    opacity: 1;
+    visibility: visible;
+}
+
+#home .content h1 span:first-child {
+    color: black;
+}
+
+#home .content h1 .my-name {
+    color: #510000;
+}
+
+
+@media (max-width: 480px) {
+    #home .content h1 .my-name {
+        font-size: 34px;
+    }
+}
 .skills-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
