@@ -340,7 +340,6 @@ function updateTyped(lang) {
     const texts = lang === "fr"
         ? [
             "Ingénieure Data",
-            "Data Engineer",
             "Data Analyst",
             "Ingénieure BI"
         ]
